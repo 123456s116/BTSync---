@@ -37,4 +37,3 @@ A 机收到微信/短信/QQ 等通知后，B 机自动重建同一条通知，�
 - 发送端：NotificationListenerService 监听 onNotificationPosted，忽略自身通知防止回环。
 - 接收端：NotificationManager 重建通知，大图标用 PackageManager.getApplicationIcon(包名) 取原应用图标；
   点击使用 getLaunchIntentForPackage 跳回原应用。
-*（内容由AI生成，仅供参考）*
